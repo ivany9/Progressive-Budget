@@ -10,7 +10,7 @@ request.onupgradeneeded = function (e) {
   const { oldVersion } = e;
 
   const newVersion = e.newVersion || db.version;
-y
+
 
   console.log(`DB Updated from version ${oldVersion} to ${newVersion}`);
 

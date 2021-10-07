@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {  //atlas connection test 1
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {  //atlas connection test 2
   useNewUrlParser: true,
   useFindAndModify: false
 });

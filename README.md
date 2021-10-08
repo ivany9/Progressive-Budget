@@ -1,70 +1,72 @@
-# Unit 19 PWA Homework: Online/Offline Budget Trackers
+# Tech-Blog
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+# Deployed 
 
-Offline Functionality:
+Find the deployed application here:https://progressibudget.herokuapp.com/
+## Description
+The Budget Tracker App, is a digital wallet, you can track your incomes "deposits" or your outcomes"expenses" no matter if the internet conexion is off, when your connection is back the data is going to be update in the database. also is a chart that help you to check the balance between this two operations.  withdrawal or deposit relating the balance and the date.
 
-  * Enter deposits offline
-
-  * Enter expenses offline
-
-When brought back online:
-
-  * Offline entries should be added to tracker.
 
 ## User Story
+
 AS AN avid traveller
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
 SO THAT my account balance is accurate when I am traveling
 
-## Business Context
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+ # Technology
 
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+```bash
+-Node.js
+-Express.js
+-Mongoose
+-MongoDB
+-Morgan
+-IndexedDb
 
-- - -
+```
 
-## Commit Early and Often
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+## Table of Contents
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+- [Deployed](#Deployed)
+- [Description](#Description)
+- [User Story](#User-Story)
+- [Technology](#technology)
+- [Demo](#Demo)
+- [Installation](#installation)
+- [Usage](#Usage)
+- [License](#license)
+- [Questions](#Contact-Information)  
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
 
-* Follow these guidelines for committing:
+### Demo
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+## Installation
 
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
+-npm Install
 
-  * Test your application before you commit to ensure functionality at every step in the development process
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+## Usage
+ 
+ ```bash
 
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
+>npm start
+>http://localhost:3000 in the browser
 
-## Submission on BCS
+```
 
-* You are required to submit the following:
 
-  * the URL to the deployed application
 
-  * the URL to the Github repository
 
-- - -
+# License 
+![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")  
 
-## Hint
 
-* In order to cache dynamic content, i.e. users' inputs for withdrawals or deposits, incorporate `indexedDB` from the previous module.
 
-* Use [Google](https://www.google.com) or another search engine to research this topic.
+## Contact-Information:
+
+    -GitHub Username: ivany9
+    -ivany9@gmail.com

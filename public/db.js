@@ -1,6 +1,6 @@
 let db;
 let budgetVersion;
-
+let status1 = document.querySelector("#status");
 // Create a new db request for a "budget" database.
 const request = indexedDB.open('BudgetDB', budgetVersion || 28);
 
@@ -61,6 +61,7 @@ function checkDatabase() {
 
             // Clear existing entries because our bulk add was successful
             currentStore.clear();
+            status1.textContent = "onLine";
             console.log('Clearing store 🧹');
           }
         });
@@ -72,14 +73,20 @@ request.onsuccess = function (e) {
   console.log('success');
   db = e.target.result;
 
+  
   // Check if app is online before reading from db
   if (navigator.onLine) {
+    status1.textContent = "onLine";
     console.log('Backend online! 🗄️');
     checkDatabase();
   }
+  
+  
+
 };
 
 const saveRecord = (record) => {
+  status1.textContent = "offLine";//
   console.log('Save record invoked');
   // Create a transaction on the BudgetStore db with readwrite access
   const transaction = db.transaction(['BudgetStore'], 'readwrite');

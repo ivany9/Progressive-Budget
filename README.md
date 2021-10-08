@@ -1,4 +1,4 @@
-# Tech-Blog
+# Progressive Budget
 
 
 # Deployed 
@@ -43,6 +43,8 @@ SO THAT my account balance is accurate when I am traveling
 
 ### Demo
 
+
+![video](https://user-images.githubusercontent.com/83906297/136479374-42360e8c-c51b-4fb9-828b-019ab0b170b3.gif)
 
 ## Installation
 
